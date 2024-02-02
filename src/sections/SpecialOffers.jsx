@@ -35,6 +35,7 @@ const SpecialOffers = () => {
             backgroundColor="bg-white"
             borderColor="border-slate-gray"
             textColor="text-slate-gray"
+            hover="hover:bg-slate-gray hover:text-white"
           />
         </div>
       </div>
