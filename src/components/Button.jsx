@@ -12,18 +12,9 @@ const Button = ({
       className={`flex justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none
     ${
       backgroundColor
-        ? `${backgroundColor} ${textColor} ${borderColor}`
-        : "bg-coral-red text-white border-coral-red"
-    } rounded-full   ${fullWidth && "w-full"}  
-    
-    ${
-      hover
-        ? `${backgroundColor} ${textColor} ${borderColor}`
-        : "hover:bg-red-500 text-white border-coral-red"
-    } rounded-full hover:bg-slate-gray hover:text-white  ${
-        fullWidth && "w-full"
-      }
-    `}
+        ? `${backgroundColor} ${textColor} ${borderColor} ${hover}`
+        : "bg-coral-red text-white border-coral-red hover:bg-red-500"
+    } rounded-full   ${fullWidth && "w-full"} `}
     >
       {label}
       {iconURL && (
